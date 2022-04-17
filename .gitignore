@@ -3,3 +3,7 @@ __pycache__/
 *$py.class
 
 venv/
+
+dump/*
+!dump/.gitkeep
+page.html
