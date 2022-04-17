@@ -36,6 +36,6 @@ class Itexamanswers():
                     else:
                         self.parsed_data[-1]['corrects'].append(answer_element.string)
 
-    def save_in(self, output_path: str, file_mode='w', indent=4):
+    def save_in(self, output_path: str, file_mode='w', indent=4) -> None:
         with open(output_path, file_mode) as f:
             json.dump(self.parsed_data, f, indent=indent)
