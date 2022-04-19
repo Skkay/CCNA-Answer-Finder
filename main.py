@@ -33,14 +33,14 @@ def main():
     args = argparser.parse_args()
     if args.get_dump == True:
         if args.from_url == True:
-            if args.site == 'itexamanswers':
+            if args.site.lower() == 'itexamanswers':
                 html = get_html_from_url(args.url)
                 itexamanswers_dumper = Itexamanswers(html)
                 itexamanswers_dumper.parse()
                 itexamanswers_dumper.save_in(args.output_path)
         
         elif args.from_file == True:
-            if args.site == 'itexamanswers':
+            if args.site.lower() == 'itexamanswers':
                 html = get_html_from_file(args.path)
                 itexamanswers_dumper = Itexamanswers(html)
                 itexamanswers_dumper.parse()
