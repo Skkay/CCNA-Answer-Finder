@@ -6,14 +6,18 @@ class Shortcut:
     def __init__(self, searcher: Searcher) -> None:
         self.searcher = searcher
 
+        self.exit_key = keyboard.Key.f10
+        self.search_key = keyboard.KeyCode.from_char('s')
+        print(f'Exit key: {self.exit_key}. Search key: {self.search_key}')
+
         with keyboard.Listener(on_release=self.on_release) as listener:
             listener.join()
     
     def on_release(self, key):
-        if key == keyboard.Key.f10:
+        if key == self.exit_key:
             return False
         
-        if key == keyboard.KeyCode.from_char('s'):
+        if key == self.search_key:
             self.search()
     
     def search(self):
