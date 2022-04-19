@@ -2,6 +2,8 @@ import requests
 import argparse
 
 from src.dumper.itexamanswers import Itexamanswers
+from src.searcher import Searcher
+from src.shortcut import Shortcut
 
 def get_html_from_url(url):
     res = requests.get(url)
@@ -26,6 +28,28 @@ def main():
 
     argparser.add_argument('--start', action='store_true')
     argparser.add_argument('--dump-path', help='path to the JSON file')
+
+
+    args = argparser.parse_args()
+    if args.get_dump == True:
+        if args.from_url == True:
+            if args.site == 'itexamanswers':
+                html = get_html_from_url(args.url)
+                itexamanswers_dumper = Itexamanswers(html)
+                itexamanswers_dumper.parse()
+                itexamanswers_dumper.save_in(args.output_path)
+        
+        elif args.from_file == True:
+            if args.site == 'itexamanswers':
+                html = get_html_from_file(args.path)
+                itexamanswers_dumper = Itexamanswers(html)
+                itexamanswers_dumper.parse()
+                itexamanswers_dumper.save_in(args.output_path)
+
+    elif args.start == True:
+        searcher = Searcher(args.dump_path)
+        searcher.load_dump()
+        Shortcut(searcher)
 
 
 if __name__ == '__main__':
