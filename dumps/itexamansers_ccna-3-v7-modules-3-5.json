@@ -1,0 +1,844 @@
+[
+    {
+        "question": "1. The IT department is reporting that a company web server is receiving an abnormally high number of web page requests from different locations simultaneously. Which type of security attack is occurring?",
+        "corrects": [
+            "DDoS"
+        ],
+        "wrongs": [
+            "adware",
+            "phishing",
+            "social engineering",
+            "spyware"
+        ]
+    },
+    {
+        "question": "2. What causes a buffer overflow?",
+        "corrects": [
+            "attempting to write more data to a memory location than that location can hold"
+        ],
+        "wrongs": [
+            "launching a security countermeasure to mitigate a Trojan horse",
+            "downloading and installing too many software updates at one time",
+            "sending too much information to two or more interfaces of the same device, thereby causing dropped packets",
+            "sending repeated connections such as Telnet to a particular device, thus denying other data sources"
+        ]
+    },
+    {
+        "question": "3. Which objective of secure communications is achieved by encrypting data?",
+        "corrects": [
+            "confidentiality"
+        ],
+        "wrongs": [
+            "authentication",
+            "availability",
+            "integrity"
+        ]
+    },
+    {
+        "question": "4. What type of malware has the primary objective of spreading across the network?",
+        "corrects": [
+            "worm"
+        ],
+        "wrongs": [
+            "virus",
+            "Trojan horse",
+            "botnet"
+        ]
+    },
+    {
+        "question": "5. What commonly motivates cybercriminals to attack networks as compared to hactivists or state-sponsored hackers?",
+        "corrects": [
+            "financial gain"
+        ],
+        "wrongs": [
+            "fame seeking",
+            "status among peers",
+            "political reasons"
+        ]
+    },
+    {
+        "question": "6. Which type of hacker is motivated to protest against political and social issues?",
+        "corrects": [
+            "hacktivist"
+        ],
+        "wrongs": [
+            "cybercriminal",
+            "script kiddie",
+            "vulnerability broker"
+        ]
+    },
+    {
+        "question": "7. What is a ping sweep?",
+        "corrects": [
+            "a network scanning technique that indicates the live hosts in a range of IP addresses."
+        ],
+        "wrongs": [
+            "a query and response protocol that identifies information about a domain, including the addresses that are assigned to that domain.",
+            "a scanning technique that examines a range of TCP or UDP port numbers on a host to detect listening services.",
+            "a software application that enables the capture of all network packets that are sent across a LAN."
+        ]
+    },
+    {
+        "question": "8. In what type of attack is a cybercriminal attempting to prevent legitimate users from accessing network services?",
+        "corrects": [
+            "DoS"
+        ],
+        "wrongs": [
+            "address spoofing",
+            "MITM",
+            "session hijacking"
+        ]
+    },
+    {
+        "question": "9. Which requirement of secure communications is ensured by the implementation of MD5 or SHA hash generating algorithms?\u200b",
+        "corrects": [
+            "integrity"
+        ],
+        "wrongs": [
+            "nonrepudiation",
+            "authentication",
+            "confidentiality"
+        ]
+    },
+    {
+        "question": "10. If an asymmetric algorithm uses a public key to encrypt data, what is used to decrypt it?",
+        "corrects": [
+            "a private key"
+        ],
+        "wrongs": [
+            "a digital certificate",
+            "a different public key",
+            "DH"
+        ]
+    },
+    {
+        "question": "11. Refer to the exhibit. Which two ACLs would permit only the two LAN networks attached to R1 to access the network that connects to R2 G0/1 interface? (Choose two.)",
+        "corrects": [
+            "access-list 1 permit 192.168.10.0 0.0.0.127",
+            null,
+            null
+        ],
+        "wrongs": [
+            "access-list 3 permit 192.168.10.128 0.0.0.63",
+            "access-list 4 permit 192.168.10.0 0.0.0.255"
+        ]
+    },
+    {
+        "question": "12. Which two packet filters could a network administrator use on an IPv4 extended ACL? (Choose two.)",
+        "corrects": [
+            "destination UDP port number",
+            "ICMP message type"
+        ],
+        "wrongs": [
+            "computer type",
+            "destination MAC address",
+            "source TCP hello address"
+        ]
+    },
+    {
+        "question": "13. What type of ACL offers greater flexibility and control over network access?",
+        "corrects": [
+            "extended"
+        ],
+        "wrongs": [
+            "numbered standard",
+            "named standard",
+            "flexible"
+        ]
+    },
+    {
+        "question": "14. What is the quickest way to remove a single ACE from a named ACL?",
+        "corrects": [
+            "Use the no keyword and the sequence number of the ACE to be removed."
+        ],
+        "wrongs": [
+            "Copy the ACL into a text editor, remove the ACE, then copy the ACL back into the router.",
+            "Create a new ACL with a different number and apply the new ACL to the router interface.",
+            "Use the no access-list command to remove the entire ACL, then recreate it without the ACE."
+        ]
+    },
+    {
+        "question": "15. Refer to the exhibit. A network administrator is configuring a standard IPv4 ACL. What is the effect after the command no access-list 10 is entered?",
+        "corrects": [
+            "ACL 10 is removed from the running configuration."
+        ],
+        "wrongs": [
+            "ACL 10 is removed from both the running configuration and the interface Fa0/1.",
+            "ACL 10 is disabled on Fa0/1.",
+            "ACL 10 will be disabled and removed after R1 restarts."
+        ]
+    },
+    {
+        "question": "16. Refer to the exhibit. A network administrator has configured ACL 9 as shown. Users on the 172.31.1.0 /24 network cannot forward traffic through router CiscoVille. What is the most likely cause of the traffic failure?",
+        "corrects": [
+            "The sequence of the ACEs is incorrect."
+        ],
+        "wrongs": [
+            "The established keyword is not specified.",
+            "The port number for the traffic has not been identified with the eq keyword.",
+            "The permit statement specifies an incorrect wildcard mask."
+        ]
+    },
+    {
+        "question": "17. A network administrator needs to configure a standard ACL so that only the workstation of the administrator with the IP address 192.168.15.23 can access the virtual terminal of the main router. Which two configuration commands can achieve the task? (Choose two.)",
+        "corrects": [
+            "Router1(config)# access-list 10 permit 192.168.15.23 0.0.0.0",
+            "Router1(config)# access-list 10 permit host 192.168.15.23"
+        ],
+        "wrongs": [
+            "Router1(config)# access-list 10 permit 192.168.15.23 0.0.0.255",
+            "Router1(config)# access-list 10 permit 192.168.15.23 255.255.255.255",
+            "Router1(config)# access-list 10 permit 192.168.15.23 255.255.255.0"
+        ]
+    },
+    {
+        "question": "18. Refer to the exhibit. Which command would be used in a standard ACL to allow only devices on the network attached to R2 G0/0 interface to access the networks attached to R1?",
+        "corrects": [
+            "access-list 1 permit 192.168.10.96 0.0.0.31"
+        ],
+        "wrongs": [
+            "access-list 1 permit 192.168.10.128 0.0.0.63",
+            "access-list 1 permit 192.168.10.0 0.0.0.255",
+            "access-list 1 permit 192.168.10.0 0.0.0.63"
+        ]
+    },
+    {
+        "question": "19. A network administrator is writing a standard ACL that will deny any traffic from the 172.16.0.0/16 network, but permit all other traffic. Which two commands should be used? (Choose two.)",
+        "corrects": [
+            "Router(config)# access-list 95 permit any",
+            "Router(config)# access-list 95 deny 172.16.0.0 0.0.255.255"
+        ],
+        "wrongs": [
+            "Router(config)# access-list 95 deny 172.16.0.0 255.255.0.0",
+            "Router(config)# access-list 95 host 172.16.0.0",
+            "Router(config)# access-list 95 172.16.0.0 255.255.255.255",
+            "Router(config)# access-list 95 deny any"
+        ]
+    },
+    {
+        "question": "20. Refer to the exhibit. An ACL was configured on R1 with the intention of denying traffic from subnet 172.16.4.0/24 into subnet 172.16.3.0/24. All other traffic into subnet 172.16.3.0/24 should be permitted. This standard ACL was then applied outbound on interface Fa0/0. Which conclusion can be drawn from this configuration?\u200b",
+        "corrects": [
+            "All traffic will be blocked, not just traffic from the 172.16.4.0/24 subnet."
+        ],
+        "wrongs": [
+            "The ACL should be applied outbound on all interfaces of R1.",
+            "The ACL should be applied to the FastEthernet 0/0 interface of R1 inbound to accomplish the requirements.",
+            "Only traffic from the 172.16.4.0/24 subnet is blocked, and all other traffic is allowed.\u200b",
+            "An extended ACL must be used in this situation."
+        ]
+    },
+    {
+        "question": "21. Refer to the exhibit. A network administrator needs to add an ACE to the TRAFFIC-CONTROL ACL that will deny IP traffic from the subnet 172.23.16.0/20. Which ACE will meet this requirement?",
+        "corrects": [
+            "5 deny 172.23.16.0 0.0.15.255"
+        ],
+        "wrongs": [
+            "30 deny 172.23.16.0 0.0.15.255",
+            "15 deny 172.23.16.0 0.0.15.255",
+            "5 deny 172.23.16.0 0.0.255.255"
+        ]
+    },
+    {
+        "question": "22. Refer to the exhibit. A network administrator configures an ACL on the router. Which statement describes the result of the configuration?",
+        "corrects": [
+            "An SSH connection is allowed from a workstation with IP 192.168.25.18 to a device with IP 172.16.45.16."
+        ],
+        "wrongs": [
+            "An SSH connection is allowed from a workstation with IP 172.16.45.16 to a device with IP 192.168.25.18.",
+            "A Telnet connection is allowed from a workstation with IP 192.168.25.18 to a device with IP 172.16.45.16.",
+            "A Telnet connection is allowed from a workstation with IP 172.16.45.16 to a device with IP 192.168.25.18."
+        ]
+    },
+    {
+        "question": "23. Refer to the exhibit. What can be determined from this output?",
+        "corrects": [
+            "The router has not had any Telnet packets from 10.35.80.22 that are destined for 10.23.77.101."
+        ],
+        "wrongs": [
+            "The ACL is missing the deny ip any any ACE.",
+            "The ACL is only monitoring traffic destined for 10.23.77.101 from three specific hosts.",
+            "Because there are no matches for line 10, the ACL is not working."
+        ]
+    },
+    {
+        "question": "24. Refer to the exhibit. A network administrator wants to permit only host 192.168.1.1 /24 to be able to access the server 192.168.2.1 /24. Which three commands will achieve this using best ACL placement practices? (Choose three.)",
+        "corrects": [
+            "R2(config-if)# ip access-group 101 in",
+            "R2(config)# interface fastethernet 0/0",
+            "R2(config)# access-list 101 permit ip host 192.168.1.1 host 192.168.2.1"
+        ],
+        "wrongs": [
+            "R2(config)# interface fastethernet 0/1",
+            "R2(config-if)# ip access-group 101 out",
+            "R2(config)# access-list 101 permit ip 192.168.1.0 255.255.255.0 192.168.2.0 255.255.255.0",
+            "R2(config)# access-list 101 permit ip any any"
+        ]
+    },
+    {
+        "question": "25. Consider the following access list.",
+        "corrects": [],
+        "wrongs": []
+    },
+    {
+        "question": "Which two actions are taken if the access list is placed inbound on a router Gigabit Ethernet port that has the IP address 192.168.10.254 assigned? (Choose two.)",
+        "corrects": [
+            "A Telnet or SSH session is allowed from any device on the 192.168.10.0 into the router with this access list assigned.",
+            "Devices on the 192.168.10.0/24 network are allowed to reply to any ping requests."
+        ],
+        "wrongs": [
+            "Only Layer 3 connections are allowed to be made from the router to any other network device.",
+            "Devices on the 192.168.10.0/24 network are not allowed to reply to any ping requests.",
+            "Devices on the 192.168.10.0/24 network can sucessfully ping devices on the 192.168.11.0 network.",
+            "Only the network device assigned the IP address 192.168.10.1 is allowed to access the router."
+        ]
+    },
+    {
+        "question": "26. Refer to the exhibit. The named ACL \u201cManagers\u201d already exists on the router. What will happen when the network administrator issues the commands that are shown in the exhibit?",
+        "corrects": [
+            "The commands are added at the end of the existing Managers ACL."
+        ],
+        "wrongs": [
+            "The commands overwrite the existing Managers ACL.",
+            "The commands are added at the beginning of the existing Managers ACL.",
+            "The network administrator receives an error that states that the ACL already exists."
+        ]
+    },
+    {
+        "question": "27. In which TCP attack is the cybercriminal attempting to overwhelm a target host with half-open TCP connections?",
+        "corrects": [
+            "SYN flood attack"
+        ],
+        "wrongs": [
+            "port scan attack",
+            "session hijacking attack",
+            "reset attack"
+        ]
+    },
+    {
+        "question": "28. Which protocol is attacked when a cybercriminal provides an invalid gateway in order to create a man-in-the-middle attack?",
+        "corrects": [
+            "DHCP"
+        ],
+        "wrongs": [
+            "DNS",
+            "ICMP",
+            "HTTP or HTTPS"
+        ]
+    },
+    {
+        "question": "29. Refer to the exhibit. An administrator has configured a standard ACL on R1 and applied it to interface serial 0/0/0 in the outbound direction. What happens to traffic leaving interface serial 0/0/0 that does not match the configured ACL statements?",
+        "corrects": [
+            "The traffic is dropped."
+        ],
+        "wrongs": [
+            "The source IP address is checked and, if a match is not found, traffic is routed out interface serial 0/0/1.",
+            "The resulting action is determined by the destination IP address.",
+            "The resulting action is determined by the destination IP address and port number."
+        ]
+    },
+    {
+        "question": "30. Refer to the exhibit. The Gigabit interfaces on both routers have been configured with subinterface numbers that match the VLAN numbers connected to them. PCs on VLAN 10 should be able to print to the P1 printer on VLAN 12. PCs on VLAN 20 should print to the printers on VLAN 22. What interface and in what direction should you place a standard ACL that allows printing to P1 from data VLAN 10, but stops the PCs on VLAN 20 from using the P1 printer? (Choose two.)",
+        "corrects": [
+            "R1 Gi0/1.12",
+            "outbound"
+        ],
+        "wrongs": [
+            "inbound",
+            "R2 S0/0/1",
+            "R1 S0/0/0",
+            "R2 Gi0/1.20"
+        ]
+    },
+    {
+        "question": "31. Which statement describes a characteristic of standard IPv4 ACLs?",
+        "corrects": [
+            "They filter traffic based on source IP addresses only."
+        ],
+        "wrongs": [
+            "They are configured in the interface configuration mode.",
+            "They can be configured to filter traffic based on both source IP addresses and source ports.",
+            "They can be created with a number but not with a name."
+        ]
+    },
+    {
+        "question": "32. What is considered a best practice when configuring ACLs on vty lines?",
+        "corrects": [
+            "Place identical restrictions on all vty lines."
+        ],
+        "wrongs": [
+            "Remove the vty password since the ACL restricts access to trusted users.",
+            "Apply the ip access-group command inbound.",
+            "Use only extended access lists."
+        ]
+    },
+    {
+        "question": null,
+        "corrects": [],
+        "wrongs": []
+    },
+    {
+        "question": "Which two conclusions can be drawn from this new configuration?\u200b (Choose two.)",
+        "corrects": [
+            "Ping packets will be permitted.",
+            "SSH packets will be permitted."
+        ],
+        "wrongs": [
+            "TFTP packets will be permitted.\u200b",
+            "Telnet packets will be permitted.",
+            "All TCP and UDP packets will be denied.\u200b"
+        ]
+    },
+    {
+        "question": "34. Which set of access control entries would allow all users on the 192.168.10.0/24 network to access a web server that is located at 172.17.80.1, but would not allow them to use Telnet?",
+        "corrects": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "wrongs": []
+    },
+    {
+        "question": "35. What is the term used to describe a mechanism that takes advantage of a vulnerability?",
+        "corrects": [
+            "exploit"
+        ],
+        "wrongs": [
+            "mitigation",
+            "vulnerability",
+            "threat"
+        ]
+    },
+    {
+        "question": "36. Refer to the exhibit. The network administrator has an IP address of 192.168.11.10 and needs access to manage R1. What is the best ACL type and placement to use in this situation?",
+        "corrects": [
+            "standard ACL inbound on R1 vty lines"
+        ],
+        "wrongs": [
+            "extended ACL outbound on R2 WAN interface towards the internet",
+            "extended ACLs inbound on R1 G0/0 and G0/1",
+            "extended ACL outbound on R2 S0/0/1"
+        ]
+    },
+    {
+        "question": "37. A technician is tasked with using ACLs to secure a router. When would the technician use the any configuration option or command?",
+        "corrects": [
+            "to identify any IP address"
+        ],
+        "wrongs": [
+            "to add a text entry for documentation purposes",
+            "to generate and send an informational message whenever the ACE is matched",
+            "to identify one specific IP address"
+        ]
+    },
+    {
+        "question": "38. Which statement accurately characterizes the evolution of threats to network security?",
+        "corrects": [
+            "Internal threats can cause even greater damage than external threats."
+        ],
+        "wrongs": [
+            "Internet architects planned for network security from the beginning.",
+            "Early Internet users often engaged in activities that would harm other users.",
+            "Threats have become less sophisticated while the technical knowledge needed by an attacker has grown."
+        ]
+    },
+    {
+        "question": "39. A user receives a phone call from a person who claims to represent IT services and then asks that user for confirmation of username and password for auditing purposes. Which security threat does this phone call represent?",
+        "corrects": [
+            "social engineering"
+        ],
+        "wrongs": [
+            "spam",
+            "DDoS",
+            "anonymous keylogging"
+        ]
+    },
+    {
+        "question": "40. In what way are zombies used in security attacks?",
+        "corrects": [
+            "They are infected machines that carry out a DDoS attack."
+        ],
+        "wrongs": [
+            "They target specific individuals to gain corporate or personal information.",
+            "They probe a group of machines for open ports to learn which services are running.",
+            "They are maliciously formed code segments used to replace legitimate applications."
+        ]
+    },
+    {
+        "question": "41. Which attack involves threat actors positioning themselves between a source and destination with the intent of transparently monitoring, capturing, and controlling the communication?",
+        "corrects": [
+            "man-in-the-middle attack"
+        ],
+        "wrongs": [
+            "SYN flood attack",
+            "DoS attack",
+            "ICMP attack"
+        ]
+    },
+    {
+        "question": "42. Which two keywords can be used in an access control list to replace a wildcard mask or address and wildcard mask pair? (Choose two.)",
+        "corrects": [
+            "host",
+            "any"
+        ],
+        "wrongs": [
+            "most",
+            "gt",
+            "some",
+            "all"
+        ]
+    },
+    {
+        "question": "43. Which statement describes a difference between the operation of inbound and outbound ACLs?",
+        "corrects": [
+            "Inbound ACLs are processed before the packets are routed while outbound ACLs are processed after the routing is completed."
+        ],
+        "wrongs": [
+            "In contrast to outbound ALCs, inbound ACLs can be used to filter packets with multiple criteria.",
+            "On a network interface, more than one inbound ACL can be configured but only one outbound ACL can be configured.",
+            "Inbound ACLs can be used in both routers and switches but outbound ACLs can be used only on routers."
+        ]
+    },
+    {
+        "question": "44. What effect would the Router1(config-ext-nacl)# permit tcp 172.16.4.0 0.0.0.255 any eq www command have when implemented inbound on the f0/0 interface?",
+        "corrects": [
+            "Traffic originating from 172.16.4.0/24 is permitted to all TCP port 80 destinations."
+        ],
+        "wrongs": [
+            "All TCP traffic is permitted, and all other traffic is denied.",
+            "All traffic from 172.16.4.0/24 is permitted anywhere on any port.",
+            "The command is rejected by the router because it is incomplete."
+        ]
+    },
+    {
+        "question": "45. Which ACE will permit a packet that originates from any network and is destined for a web server at 192.168.1.1?",
+        "corrects": [
+            "access-list 101 permit tcp any host 192.168.1.1 eq 80"
+        ],
+        "wrongs": [
+            "access-list 101 permit tcp host 192.168.1.1 eq 80 any",
+            "access-list 101 permit tcp host 192.168.1.1 any eq 80",
+            "access-list 101 permit tcp any eq 80 host 192.168.1.1"
+        ]
+    },
+    {
+        "question": "46. Refer to the exhibit. A new network policy requires an ACL denying FTP and Telnet access to a Corp file server from all interns. The address of the file server is 172.16.1.15 and all interns are assigned addresses in the 172.18.200.0/24 network. After implementing the ACL, no one in the Corp network can access any of the servers. What is the problem?",
+        "corrects": [
+            "The ACL is implicitly denying access to all the servers."
+        ],
+        "wrongs": [
+            "Inbound ACLs must be routed before they are processed.",
+            "Named ACLs require the use of port numbers.",
+            "The ACL is applied to the interface using the wrong direction."
+        ]
+    },
+    {
+        "question": "47. A technician is tasked with using ACLs to secure a router. When would the technician use the access-class 20 in configuration option or command?",
+        "corrects": [
+            "to secure administrative access to the router"
+        ],
+        "wrongs": [
+            "to remove an ACL from an interface",
+            "to remove a configured ACL",
+            "to apply a standard ACL to an interface"
+        ]
+    },
+    {
+        "question": "48. What is the term used to describe the same pre-shared key or secret key, known by both the sender and receiver to encrypt and decrypt data?",
+        "corrects": [
+            "symmetric encryption algorithm"
+        ],
+        "wrongs": [
+            "data integrity",
+            "exploit",
+            "risk"
+        ]
+    },
+    {
+        "question": "49. Refer to the exhibit. Internet privileges for an employee have been revoked because of abuse but the employee still needs access to company resources. What is the best ACL type and placement to use in this situation?",
+        "corrects": [
+            "standard ACL outbound on R2 WAN interface towards the internet"
+        ],
+        "wrongs": [
+            "standard ACL inbound on R2 WAN interface connecting to the internet",
+            "standard ACL inbound on R1 G0/0",
+            "standard ACL outbound on R1 G0/0"
+        ]
+    },
+    {
+        "question": "50. Refer to the exhibit. The student on the H1 computer continues to launch an extended ping with expanded packets at the student on the H2 computer. The school network administrator wants to stop this behavior, but still allow both students access to web-based computer assignments. What would be the best plan for the network administrator?",
+        "corrects": [
+            "Apply an inbound extended ACL on R1 Gi0/0."
+        ],
+        "wrongs": [
+            "Apply an inbound standard ACL on R1 Gi0/0.",
+            "Apply an inbound extended ACL on R2 Gi0/1.",
+            "Apply an outbound extended ACL on R1 S0/0/1.",
+            "Apply an outbound standard ACL on R2 S0/0/1."
+        ]
+    },
+    {
+        "question": "51. A technician is tasked with using ACLs to secure a router. When would the technician use the \u2018ip access-group 101 in\u2019 configuration option or command?",
+        "corrects": [
+            "to apply an extended ACL to an interface"
+        ],
+        "wrongs": [
+            "to secure management traffic into the router",
+            "to secure administrative access to the router",
+            "to display all restricted traffic"
+        ]
+    },
+    {
+        "question": "52. In which type of attack is falsified information used to redirect users to malicious Internet sites?",
+        "corrects": [
+            "DNS cache poisoning"
+        ],
+        "wrongs": [
+            "DNS amplification and reflection",
+            "ARP cache poisoning",
+            "domain generation"
+        ]
+    },
+    {
+        "question": "53. What is a feature of an IPS?",
+        "corrects": [
+            "It can stop malicious packets."
+        ],
+        "wrongs": [
+            "It is deployed in offline mode.",
+            "It has no impact on latency.",
+            "It is primarily focused on identifying possible incidents."
+        ]
+    },
+    {
+        "question": "54. What is the term used to describe a potential danger to a company\u2019s assets, data, or network functionality?",
+        "corrects": [
+            "threat"
+        ],
+        "wrongs": [
+            "vulnerability",
+            "asset",
+            "exploit"
+        ]
+    },
+    {
+        "question": "55. Refer to the exhibit. Network 192.168.30.0/24 contains all of the company servers. Policy dictates that traffic from the servers to both networks 192.168.10.0 and 192.168.11.0 be limited to replies for original requests. What is the best ACL type and placement to use in this situation?",
+        "corrects": [],
+        "wrongs": [
+            "extended ACL inbound on R3 G0/0",
+            "extended ACL inbound on R1 G0/0",
+            "standard ACL inbound on R1 G0/1",
+            "standard ACL inbound on R1 vty lines"
+        ]
+    },
+    {
+        "question": "56. What does the CLI prompt change to after entering the command ip access-list standard aaa from global configuration mode?",
+        "corrects": [
+            "Router(config-std-nacl)#"
+        ],
+        "wrongs": [
+            "Router(config-line)#",
+            "Router(config)#",
+            "Router(config-router)#",
+            "Router(config-if)#"
+        ]
+    },
+    {
+        "question": "57. Refer to the exhibit. Many employees are wasting company time accessing social media on their work computers. The company wants to stop this access. What is the best ACL type and placement to use in this situation?",
+        "corrects": [
+            "extended ACLs inbound on R1 G0/0 and G0/1"
+        ],
+        "wrongs": [
+            "extended ACL outbound on R2 WAN interface towards the internet",
+            "standard ACL outbound on R2 WAN interface towards the internet",
+            "standard ACL outbound on R2 S0/0/0"
+        ]
+    },
+    {
+        "question": "58. A technician is tasked with using ACLs to secure a router. When would the technician use the 40 deny host 192.168.23.8 configuration option or command?",
+        "corrects": [
+            "to create an entry in a numbered ACL"
+        ],
+        "wrongs": [
+            "to remove all ACLs from the router",
+            "to apply an ACL to all router interfaces",
+            "to secure administrative access to the router"
+        ]
+    },
+    {
+        "question": "59. What is the best description of Trojan horse malware?",
+        "corrects": [
+            "It appears as useful software but hides malicious code."
+        ],
+        "wrongs": [
+            "It is malware that can only be distributed over the Internet.",
+            "It is software that causes annoying but not fatal computer problems.",
+            "It is the most easily detected form of malware."
+        ]
+    },
+    {
+        "question": "60. What wild card mask will match networks 172.16.0.0 through 172.19.0.0?",
+        "corrects": [
+            "0.3.255.255"
+        ],
+        "wrongs": [
+            "0.0.3.255",
+            "0.252.255.255",
+            "0.0.255.255"
+        ]
+    },
+    {
+        "question": "60. What is the term used to describe gray hat hackers who publicly protest organizations or governments by posting articles, videos, leaking sensitive information, and performing network attacks?",
+        "corrects": [
+            "hacktivists"
+        ],
+        "wrongs": [
+            "white hat hackers",
+            "grey hat hackers",
+            "state-sponsored hacker"
+        ]
+    },
+    {
+        "question": "61. Refer to the exhibit. The company has provided IP phones to employees on the 192.168.10.0/24 network and the voice traffic will need priority over data traffic. What is the best ACL type and placement to use in this situation?",
+        "corrects": [
+            "extended ACL inbound on R1 G0/0"
+        ],
+        "wrongs": [
+            "extended ACL outbound on R2 WAN interface towards the internet",
+            "extended ACL outbound on R2 S0/0/1",
+            "extended ACLs inbound on R1 G0/0 and G0/1"
+        ]
+    },
+    {
+        "question": "62. A technician is tasked with using ACLs to secure a router. When would the technician use the no ip access-list 101 configuration option or command?",
+        "corrects": [
+            "to remove a configured ACL"
+        ],
+        "wrongs": [
+            "to apply an ACL to all router interfaces",
+            "to secure administrative access to the router",
+            "to remove all ACLs from the router"
+        ]
+    },
+    {
+        "question": "63. What is the term used to describe unethical criminals who compromise computer and network security for personal gain, or for malicious reasons?",
+        "corrects": [
+            "black hat hackers"
+        ],
+        "wrongs": [
+            "hacktivists",
+            "vulnerability broker",
+            "script kiddies"
+        ]
+    },
+    {
+        "question": "64. What is the term used to describe a guarantee that the message is not a forgery and does actually come from whom it states?",
+        "corrects": [
+            "origin authentication"
+        ],
+        "wrongs": [
+            "mitigation",
+            "exploit",
+            "data non-repudiation"
+        ]
+    },
+    {
+        "question": "65. A technician is tasked with using ACLs to secure a router. When would the technician use the ip access-group 101 in configuration option or command?",
+        "corrects": [
+            "to apply an extended ACL to an interface"
+        ],
+        "wrongs": [
+            "to secure administrative access to the router",
+            "to display all restricted traffic",
+            "to secure management traffic into the router"
+        ]
+    },
+    {
+        "question": "66. A technician is tasked with using ACLs to secure a router. When would the technician use the remark configuration option or command?",
+        "corrects": [
+            "to add a text entry for documentation purposes"
+        ],
+        "wrongs": [
+            "to generate and send an informational message whenever the ACE is matched",
+            "to identify one specific IP address",
+            "to restrict specific traffic access through an interface"
+        ]
+    },
+    {
+        "question": "67. Refer to the exhibit. The company CEO demands that one ACL be created to permit email traffic to the internet and deny FTP access. What is the best ACL type and placement to use in this situation?",
+        "corrects": [
+            "extended ACL outbound on R2 WAN interface towards the internet"
+        ],
+        "wrongs": [
+            "standard ACL outbound on R2 S0/0/0",
+            "extended ACL inbound on R2 S0/0/0",
+            "standard ACL inbound on R2 WAN interface connecting to the internet"
+        ]
+    },
+    {
+        "question": "68. A technician is tasked with using ACLs to secure a router. When would the technician use the established configuration option or command?",
+        "corrects": [
+            "to allow returning reply traffic to enter the internal network"
+        ],
+        "wrongs": [
+            "to add a text entry for documentation purposes",
+            "to display all restricted traffic",
+            "to allow specified traffic through an interface"
+        ]
+    },
+    {
+        "question": "69. A technician is tasked with using ACLs to secure a router. When would the technician use the deny configuration option or command?",
+        "corrects": [
+            "to restrict specific traffic access through an interface"
+        ],
+        "wrongs": [
+            "to identify one specific IP address",
+            "to display all restricted traffic",
+            "to generate and send an informational message whenever the ACE is matched"
+        ]
+    },
+    {
+        "question": "70. Refer to the exhibit. Only authorized remote users are allowed remote access to the company server 192.168.30.10. What is the best ACL type and placement to use in this situation?",
+        "corrects": [
+            "extended ACL inbound on R2 WAN interface connected to the internet"
+        ],
+        "wrongs": [
+            "extended ACLs inbound on R1 G0/0 and G0/1",
+            "extended ACL outbound on R2 WAN interface towards the internet",
+            "extended ACL inbound on R2 S0/0/0"
+        ]
+    },
+    {
+        "question": "71. Refer to the exhibit. Employees on 192.168.11.0/24 work on critically sensitive information and are not allowed access off their network. What is the best ACL type and placement to use in this situation?",
+        "corrects": [
+            "standard ACL inbound on R1 G0/1"
+        ],
+        "wrongs": [
+            "standard ACL inbound on R1 vty lines",
+            "extended ACL inbound on R1 G0/0",
+            "extended ACL inbound on R3 S0/0/1"
+        ]
+    },
+    {
+        "question": null,
+        "corrects": [
+            "to identify one specific IP address"
+        ],
+        "wrongs": [
+            "to add a text entry for documentation purposes",
+            "to generate and send an informational message whenever the ACE is matched",
+            "to identify any IP address"
+        ]
+    },
+    {
+        "question": "73. What commonly motivates cybercriminals to attack networks as compared to hacktivists or state-sponsored hackers?",
+        "corrects": [
+            "financial gain"
+        ],
+        "wrongs": [
+            "political reasons",
+            "fame seeking",
+            "status among peers"
+        ]
+    }
+]

@@ -1,0 +1,746 @@
+[
+    {
+        "question": "1. What is the term used to indicate a variation of delay?",
+        "corrects": [
+            "jitter"
+        ],
+        "wrongs": [
+            "latency",
+            "serialization delay",
+            "speed mismatch"
+        ]
+    },
+    {
+        "question": "2. A network engineer performs a ping test and receives a value that shows the time it takes for a packet to travel from a source to a destination device and return. Which term describes the value?",
+        "corrects": [
+            "latency"
+        ],
+        "wrongs": [
+            "jitter",
+            "priority",
+            "bandwidth"
+        ]
+    },
+    {
+        "question": "3. What role do network devices play in the IntServ QoS model?",
+        "corrects": [
+            "Network devices ensure that resources are available before traffic is allowed to be sent by a host through the network."
+        ],
+        "wrongs": [
+            "Network devices provide a best-effort approach to forwarding traffic.",
+            "Network devices are configured to service multiple classes of traffic and handle traffic as it may arrive.",
+            "Network devices use QoS on a hop-by-hop basis to provide excellent scalability."
+        ]
+    },
+    {
+        "question": "4. Which device would be classified as a trusted endpoint?",
+        "corrects": [
+            "IP phone"
+        ],
+        "wrongs": [
+            "switch",
+            "router",
+            "firewall"
+        ]
+    },
+    {
+        "question": "5.\u00a0What is the benefit of deploying Layer 3 QoS marking across an enterprise network?",
+        "corrects": [
+            "Layer 3 marking can carry the QoS information end-to-end."
+        ],
+        "wrongs": [
+            "Layer 3 marking can carry QoS information on switches that are not IP aware.",
+            "Layer 3 marking can be carried in the 802.1Q fields.",
+            "Layer 3 marking can be used to carry non-IP traffic."
+        ]
+    },
+    {
+        "question": "6. What is the function of a QoS trust boundary?",
+        "corrects": [
+            "A trust boundary identifies which devices trust the marking on packets that enter a network."
+        ],
+        "wrongs": [
+            "A trust boundary identifies the location where traffic cannot be remarked.",
+            "A trust boundary only allows traffic to enter if it has previously been marked.",
+            "A trust boundary only allows traffic from trusted endpoints to enter the network."
+        ]
+    },
+    {
+        "question": "7. What are two approaches to prevent packet loss due to congestion on an interface? (Choose two.)",
+        "corrects": [
+            "Drop lower-priority packets.",
+            "Increase link capacity."
+        ],
+        "wrongs": [
+            "Decrease buffer space.",
+            "Disable queuing mechanisms.",
+            "Prevent bursts of traffic."
+        ]
+    },
+    {
+        "question": "8. What configuration scenario would offer the most protection to SNMP get and set messages?",
+        "corrects": [
+            "SNMPv3 configured with the auth security level"
+        ],
+        "wrongs": [
+            "SNMPv2 for in-band management with read-write community strings",
+            "SNMPv1 with out-of-band management in a private subnet",
+            "SNMP community strings"
+        ]
+    },
+    {
+        "question": "9. Refer to the exhibit. The network administrator enters these commands into the R1 router:",
+        "corrects": [],
+        "wrongs": []
+    },
+    {
+        "question": "When the router prompts for an address or remote host name, what IP address should the administrator enter at the prompt?",
+        "corrects": [
+            "192.168.11.252"
+        ],
+        "wrongs": [
+            "192.168.9.254",
+            "192.168.10.2",
+            "192.168.11.254",
+            "192.168.10.1"
+        ]
+    },
+    {
+        "question": "10. The command ntp server 10.1.1.1 is issued on a router. What impact does this command have?",
+        "corrects": [
+            "synchronizes the system clock with the time source with IP address 10.1.1.1"
+        ],
+        "wrongs": [
+            "determines which server to send system log files to",
+            "identifies the server on which to store backup configurations",
+            "ensures that all logging will have a time stamp associated with it"
+        ]
+    },
+    {
+        "question": "11. As the network administrator you have been asked to implement EtherChannel on the corporate network. What does this configuration consist of?",
+        "corrects": [
+            "grouping multiple physical ports to increase bandwidth between two switches"
+        ],
+        "wrongs": [
+            "providing redundant links that dynamically block or forward traffic",
+            "grouping two devices to share a virtual IP address",
+            "providing redundant devices to allow traffic to flow in the event of device failure"
+        ]
+    },
+    {
+        "question": "12. What is a definition of a two-tier LAN network design?",
+        "corrects": [
+            "distribution and core layers collapsed into one tier, and the access layer on a separate tier"
+        ],
+        "wrongs": [
+            "access and core layers collapsed into one tier, and the distribution layer on a separate tier",
+            "access, distribution, and core layers collapsed into one tier, with a separate backbone layer",
+            "access and distribution layers collapsed into one tier, and the core layer on a separate tier"
+        ]
+    },
+    {
+        "question": "13. What are two reasons to create a network baseline? (Choose two.)",
+        "corrects": [
+            "to identify future abnormal network behavior",
+            "to determine if the network can deliver the required policies"
+        ],
+        "wrongs": [
+            "to select a routing protocol",
+            "to determine what kind of equipment to implement",
+            "to design a network according to a proper model",
+            "to evaluate security vulnerabilities in the network"
+        ]
+    },
+    {
+        "question": "14. A computer can access devices on the same network but cannot access devices on other networks. What is the probable cause of this problem?",
+        "corrects": [
+            "The computer has an invalid default gateway address."
+        ],
+        "wrongs": [
+            "The computer has an incorrect subnet mask.",
+            "The cable is not connected properly to the NIC.",
+            "The computer has an invalid IP address."
+        ]
+    },
+    {
+        "question": "15. In which step of gathering symptoms does the network engineer determine if the problem is at the core, distribution, or access layer of the network?",
+        "corrects": [
+            "Narrow the scope."
+        ],
+        "wrongs": [
+            "Gather information.",
+            "Document the symptoms.",
+            "Determine ownership.",
+            "Determine the symptoms."
+        ]
+    },
+    {
+        "question": "16. A network administrator is deploying QoS with the ability to provide a special queue for voice traffic so that voice traffic is forwarded before network traffic in other queues. Which queuing method would be the best choice?",
+        "corrects": [
+            "LLQ"
+        ],
+        "wrongs": [
+            "CBWFQ",
+            "WFQ",
+            "FIFO"
+        ]
+    },
+    {
+        "question": "17. What are two characteristics of voice traffic? (Choose two.)",
+        "corrects": [
+            "Voice traffic latency should not exceed 150 ms.",
+            "Dropped voice packets are not retransmitted."
+        ],
+        "wrongs": [
+            "Voice traffic is unpredictable and inconsistent.",
+            "Voice traffic requires at least 384 kbs of bandwidth.",
+            "Voice traffic consumes lots of network resources."
+        ]
+    },
+    {
+        "question": "18. Which type of network traffic cannot be managed using congestion avoidance tools?",
+        "corrects": [
+            "UDP"
+        ],
+        "wrongs": [
+            "TCP",
+            "ICMP",
+            "IP"
+        ]
+    },
+    {
+        "question": "19. When QoS is implemented in a converged network, which two factors can be controlled to improve network performance for real-time traffic? (Choose two.)",
+        "corrects": [
+            "delay",
+            "jitter"
+        ],
+        "wrongs": [
+            "packet addressing",
+            "packet routing",
+            "link speed"
+        ]
+    },
+    {
+        "question": "20. An administrator wants to replace the configuration file on a Cisco router by loading a new configuration file from a TFTP server. What two things does the administrator need to know before performing this task? (Choose two.)",
+        "corrects": [
+            "name of the configuration file that is stored on the TFTP server",
+            "TFTP server IP address"
+        ],
+        "wrongs": [
+            "name of the configuration file that is currently stored on the router",
+            "configuration register value",
+            "router IP address"
+        ]
+    },
+    {
+        "question": "21. Refer to the exhibit. Which of the three Cisco IOS images shown will load into RAM?",
+        "corrects": [
+            "The router selects an image depending on the boot system command in the configuration."
+        ],
+        "wrongs": [
+            "The router selects an image depending on the value of the configuration register.",
+            "The router selects the third Cisco IOS image because it is the most recent IOS image.",
+            "The router selects the third Cisco IOS image because it contains the advipservicesk9 image.",
+            "The router selects the second Cisco IOS image because it is the smallest IOS image."
+        ]
+    },
+    {
+        "question": "22. Refer to the exhibit. What two types of devices are connected to R1? (Choose two.)",
+        "corrects": [
+            "switch",
+            "router"
+        ],
+        "wrongs": [
+            "hub",
+            "repeater",
+            "Source Route Bridge"
+        ]
+    },
+    {
+        "question": "23. What are three functions provided by the syslog service? (Choose three.)",
+        "corrects": [
+            "to select the type of logging information that is captured",
+            "to gather logging information for monitoring and troubleshooting",
+            "to specify the destinations of captured messages"
+        ],
+        "wrongs": [
+            "to periodically poll agents for data",
+            "to provide statistics on packets that are flowing through a Cisco device",
+            "to provide traffic analysis"
+        ]
+    },
+    {
+        "question": "24. What is the function of the MIB element as part of a network management system?",
+        "corrects": [
+            "to store data about a device"
+        ],
+        "wrongs": [
+            "to collect data from SNMP agents",
+            "to send and retrieve network management information",
+            "to change configurations on SNMP agents"
+        ]
+    },
+    {
+        "question": "25. What network design would contain the scope of disruptions on a network should a failure occur?",
+        "corrects": [
+            "the deployment of distribution layer switches in pairs and the division of access layer switch connections between them"
+        ],
+        "wrongs": [
+            "the reduction in the number of redundant devices and connections in the network core",
+            "the installation of only enterprise class equipment throughout the network",
+            "the configuration of all access layer devices to share a single gateway"
+        ]
+    },
+    {
+        "question": "26. Which action should be taken when planning for redundancy on a hierarchical network design?",
+        "corrects": [
+            "add alternate physical paths for data to traverse the network"
+        ],
+        "wrongs": [
+            "continually purchase backup equipment for the network",
+            "implement STP portfast between the switches on the network",
+            "immediately replace a non-functioning module, service or device on a network"
+        ]
+    },
+    {
+        "question": "27. What are two benefits of extending access layer connectivity to users through a wireless medium? (Choose two.)",
+        "corrects": [
+            "increased flexibility",
+            "reduced costs"
+        ],
+        "wrongs": [
+            "increased network management options",
+            "decreased number of critical points of failure",
+            "increased bandwidth availability"
+        ]
+    },
+    {
+        "question": "28. What is a basic function of the Cisco Borderless Architecture access layer?",
+        "corrects": [
+            "provides access to the user"
+        ],
+        "wrongs": [
+            "aggregates Layer 2 broadcast domains",
+            "aggregates Layer 3 routing boundaries",
+            "provides fault isolation"
+        ]
+    },
+    {
+        "question": "29. Which characteristic would most influence a network design engineer to select a multilayer switch over a Layer 2 switch?",
+        "corrects": [
+            "ability to build a routing table"
+        ],
+        "wrongs": [
+            "ability to have multiple forwarding paths through the switched network based on VLAN number(s)",
+            "ability to provide power to directly-attached devices and the switch itself",
+            "ability to aggregate multiple ports for maximum data throughput"
+        ]
+    },
+    {
+        "question": "30. Refer to the exhibit. Why are routers R1 and R2 not able to establish an OSPF adjacency?\u200b",
+        "corrects": [
+            "The serial interfaces are not in the same area."
+        ],
+        "wrongs": [
+            "The process numbers are not the same in both routers.",
+            "A backbone router cannot establish an adjacency with an ABR router.",
+            "The router ID values are not the same in both routers."
+        ]
+    },
+    {
+        "question": "31. When is the most appropriate time to measure network operations to establish a network performance baseline?",
+        "corrects": [
+            "at the same time each day across a set period of average working days, so that typical traffic patterns can be established"
+        ],
+        "wrongs": [
+            "whenever high network use is detected, so that how the network performs under stress can be monitored",
+            "during quiet vacation periods, so that the level of non-data traffic can be determined",
+            "at random times during a 10 week period, so that abnormal traffic levels can be detected"
+        ]
+    },
+    {
+        "question": "32. Refer to the exhibit. A user has configured a NIC on the PC as shown but finds that the PC is unable to access the Internet. What is the problem?",
+        "corrects": [
+            "The default gateway address is incorrect."
+        ],
+        "wrongs": [
+            "The preferred DNS address is incorrect.",
+            "The settings were not validated upon exit.",
+            "There should not be an alternate DNS server."
+        ]
+    },
+    {
+        "question": "33. Refer to the exhibit. A network engineer configured an ACL preventing Telnet and HTTP access to the HQ web server from guest users in the Branch LAN. The address of the web server is 192.168.1.10 and all guest users are assigned addresses in the 192.168.10.0/24 network. After implementing the ACL, no one can access any of the HQ servers. What is the problem?",
+        "corrects": [
+            "The ACL is implicitly denying access to all the servers."
+        ],
+        "wrongs": [
+            "Inbound ACLs must be routed before they are processed.",
+            "Named ACLs require the use of port numbers.",
+            "The ACL is applied to the interface using the wrong direction."
+        ]
+    },
+    {
+        "question": "34. Refer to the exhibit. A network administrator has configured OSPFv2 on the two Cisco routers as shown. PC1 is unable to connect to PC2. What should the administrator do first when troubleshooting the OSPFv2 implementation?",
+        "corrects": [
+            "Test Layer 3 connectivity between the directly connected routers."
+        ],
+        "wrongs": [
+            "Disconnect the serial link between router R1 and R2.",
+            "Turn off OSPFv2.",
+            "Implement the network 192.168.255.0 0.0.0.3 area 0 command on router R1."
+        ]
+    },
+    {
+        "question": "35. What type of traffic is described as requiring latency to be no more than 150 milliseconds (ms)?",
+        "corrects": [
+            "voice"
+        ],
+        "wrongs": [
+            "video",
+            "data"
+        ]
+    },
+    {
+        "question": "36. A network manager wants to add a time to log messages so that there is record of when the message was generated. What command should the administrator use on a Cisco router?",
+        "corrects": [
+            "service timestamps log datetime"
+        ],
+        "wrongs": [
+            "show cdp interface",
+            "ntp server 10.10.14.9",
+            "clock timezone PST -7"
+        ]
+    },
+    {
+        "question": "37. Match the functions to the corresponding layers. (Not all options are used.)",
+        "corrects": [],
+        "wrongs": []
+    },
+    {
+        "question": "38. Match the borderless switched network guideline description to the principle. (Not all options are used.)",
+        "corrects": [],
+        "wrongs": []
+    },
+    {
+        "question": "39. What are two characteristics of the best-effort QoS model? (Choose two.)",
+        "corrects": [
+            "It does not provide a delivery guarantee for packets.",
+            "It treats all network packets in the same way."
+        ],
+        "wrongs": [
+            "It allows end hosts to signal their QoS needs to the network.",
+            "It uses a connection-oriented approach with QoS.",
+            "It provides preferential treatment for voice packets."
+        ]
+    },
+    {
+        "question": "40. Why is QoS an important issue in a converged network that combines voice, video, and data communications?",
+        "corrects": [
+            null,
+            "Voice and video communications are more sensitive to latency."
+        ],
+        "wrongs": [
+            "Data communications are sensitive to jitter.",
+            "Data communications must be given the first priority."
+        ]
+    },
+    {
+        "question": "41. A network administrator configures a router with the command sequence:",
+        "corrects": [],
+        "wrongs": []
+    },
+    {
+        "question": "What is the effect of the command sequence?",
+        "corrects": [
+            "The router will load IOS from the TFTP server. If the image fails to load, it will load the IOS image from ROM."
+        ],
+        "wrongs": [
+            "On next reboot, the router will load the IOS image from ROM.",
+            "The router will search and load a valid IOS image in the sequence of flash, TFTP, and ROM.",
+            "The router will copy the IOS image from the TFTP server and then reboot the system."
+        ]
+    },
+    {
+        "question": "42. Which statement describes SNMP operation?",
+        "corrects": [
+            "A set request is used by the NMS to change configuration variables in the agent device."
+        ],
+        "wrongs": [
+            "An SNMP agent that resides on a managed device collects information about the device and stores that information remotely in the MIB that is located on the NMS.\u200b",
+            "An NMS periodically polls the SNMP agents that are residing on managed devices by using traps to query the devices for data.\u200b",
+            "A get request is used by the SNMP agent to query the device for data.\u200b"
+        ]
+    },
+    {
+        "question": "43. Refer to the exhibit. A network administrator issues the show lldp neighbors command on a switch. What are two conclusions that can be drawn? (Choose two.)",
+        "corrects": [
+            "Dev1 is connected to interface Fa0/5 of S1.",
+            "Dev2 is a switch."
+        ],
+        "wrongs": [
+            "Dev1 is a switch with mixed types of interfaces.",
+            "Dev1 is connected to interface Fa0/4 of Dev2.",
+            "S1 has only two interfaces."
+        ]
+    },
+    {
+        "question": "44. What are the three layers of the switch hierarchical design model? (Choose three.)",
+        "corrects": [
+            "distribution",
+            "access",
+            "core"
+        ],
+        "wrongs": [
+            "network access",
+            "data link",
+            "enterprise"
+        ]
+    },
+    {
+        "question": "45. Refer to the exhibit. Which devices exist in the failure domain when switch S3 loses power?",
+        "corrects": [
+            "PC_3 and AP_2"
+        ],
+        "wrongs": [
+            "S4 and PC_2",
+            "PC_3 and PC_2",
+            "S1 and S4",
+            "AP_2 and AP_1"
+        ]
+    },
+    {
+        "question": "46. A network designer is considering whether to implement a switch block on the company network. What is the primary advantage of deploying a switch block?",
+        "corrects": [
+            "The failure of a switch block will not impact all end users."
+        ],
+        "wrongs": [
+            "This is network application software that prevents the failure of a single network device.",
+            "This is a security feature that is available on all new Catalyst switches.",
+            "A single core router provides all the routing between VLANs."
+        ]
+    },
+    {
+        "question": "47. Which troubleshooting tool would a network administrator use to check the Layer 2 header of frames that are leaving a particular host?",
+        "corrects": [
+            "protocol analyzer"
+        ],
+        "wrongs": [
+            "knowledge base",
+            "CiscoView",
+            "baselining tool"
+        ]
+    },
+    {
+        "question": "48. Refer to the exhibit. R1 and R3 are connected to each other via the local serial 0/0/0 interface. Why are they not forming an adjacency?",
+        "corrects": [
+            "They are in different subnets."
+        ],
+        "wrongs": [
+            "They have different routing processes.",
+            "They have different router IDs.",
+            "The connecting interfaces are configured as passive."
+        ]
+    },
+    {
+        "question": "49. What type of traffic is described as not resilient to loss?",
+        "corrects": [
+            "video"
+        ],
+        "wrongs": [
+            "data",
+            "voice"
+        ]
+    },
+    {
+        "question": "50. A network manager wants lists the contents of flash. What command should the administrator use on a Cisco router?",
+        "corrects": [
+            "dir"
+        ],
+        "wrongs": [
+            "show file systems",
+            "lldp enable",
+            "service timestamps log datetime"
+        ]
+    },
+    {
+        "question": "51. Voice packets are being received in a continuous stream by an IP phone, but because of network congestion the delay between each packet varies and is causing broken conversations. What term describes the cause of this condition?",
+        "corrects": [
+            "jitter"
+        ],
+        "wrongs": [
+            "buffering",
+            "latency",
+            "queuing"
+        ]
+    },
+    {
+        "question": "52. A user is unable to reach the website when typing http://www.cisco.com in a web browser, but can reach the same site by typing http://72.163.4.161 . What is the issue?",
+        "corrects": [
+            "DNS"
+        ],
+        "wrongs": [
+            "DHCP",
+            "Default Gateway",
+            "TCP/IP Protocol stack"
+        ]
+    },
+    {
+        "question": "53. What type of traffic is described as tending to be unpredictable, inconsistent, and bursty?",
+        "corrects": [
+            "Video"
+        ],
+        "wrongs": [
+            "Audio",
+            "Data",
+            "Voice"
+        ]
+    },
+    {
+        "question": "54. A network manager wants to determine the size of the Cisco IOS image file on the networking device. What command should the administrator use on a Cisco router?",
+        "corrects": [
+            "show flash:0"
+        ],
+        "wrongs": [
+            "copy flash: tftp:",
+            "config-register 0x2102",
+            "confreg 0x2142"
+        ]
+    },
+    {
+        "question": "55. What is the principle that is applied when a network technician is troubleshooting a network fault by using the divide-and-conquer method?",
+        "corrects": [
+            "Once it is verified that components in a particular layer are functioning properly, it can then be assumed that components in the layers below it are also functional."
+        ],
+        "wrongs": [
+            "Testing is performed at Layer 7 and at Layer 1, then at Layers 6 and 2, and so on, working towards the middle of the stack until all layers are verified as operational.",
+            "Testing is performed at all layers of the OSI model until a non-functioning component is found.",
+            "Once it is verified that a component in a particular layer is functioning properly, testing can then be performed on any other layer."
+        ]
+    },
+    {
+        "question": "56. Which queuing algorithm has only a single queue and treats all packets equally?",
+        "corrects": [
+            "FIFO"
+        ],
+        "wrongs": [
+            "CBWFQ",
+            "LLQ",
+            "WFQ"
+        ]
+    },
+    {
+        "question": "57. What type of traffic is described as traffic that requires at least 30 Kbps of bandwidth?",
+        "corrects": [
+            "voice"
+        ],
+        "wrongs": [
+            "data",
+            "video"
+        ]
+    },
+    {
+        "question": "58. What type of traffic is described as being able to tolerate a certain amount of latency, jitter, and loss without any noticeable effects?",
+        "corrects": [
+            "voice"
+        ],
+        "wrongs": [
+            "video",
+            "data"
+        ]
+    },
+    {
+        "question": "59. A network manager wants to view the amount of available and free memory, the type of file system, and its permissions. What command should the administrator use on a Cisco router?",
+        "corrects": [
+            "show file systems"
+        ],
+        "wrongs": [
+            "ntp server 10.10.14.9",
+            "lldp enable",
+            "clock timezone PST -7"
+        ]
+    },
+    {
+        "question": "60. What type of traffic is described as requiring latency to be no more than 400 milliseconds (ms)?",
+        "corrects": [
+            "video"
+        ],
+        "wrongs": [
+            "voice",
+            "data"
+        ]
+    },
+    {
+        "question": "61. What type of traffic is described as consisting of traffic that requires a higher priority if interactive?",
+        "corrects": [
+            "data"
+        ],
+        "wrongs": [
+            "voice",
+            "video"
+        ]
+    },
+    {
+        "question": "62. A network manager wants to configure the router to load a new image from flash during bootup. What command should the administrator use on a Cisco router?",
+        "corrects": [
+            "boot system"
+        ],
+        "wrongs": [
+            "copy flash: tftp:",
+            "clock set 14:25:00 nov 13 2018",
+            "copy tftp startup-config"
+        ]
+    },
+    {
+        "question": "63. What type of traffic is described as predictable and smooth?",
+        "corrects": [
+            "voice"
+        ],
+        "wrongs": [
+            "data",
+            "video"
+        ]
+    },
+    {
+        "question": "64. A network manager wants to ensure that the device will ignore the startup config file during startup and bypass the required passwords. What command should the administrator use on a Cisco router?",
+        "corrects": [
+            "confreg 0x2142"
+        ],
+        "wrongs": [
+            "copy usbflash0:/R1-Config",
+            "copy running-config tftp",
+            "config-register 0x2102"
+        ]
+    },
+    {
+        "question": "65. What type of traffic is described as having a high volume of data per packet?",
+        "corrects": [
+            "video"
+        ],
+        "wrongs": [
+            "voice",
+            "data"
+        ]
+    },
+    {
+        "question": "66. A network manager wants to backup the running configuration to a file server. What command should the administrator use on a Cisco router?",
+        "corrects": [
+            "copy running-config tftp"
+        ],
+        "wrongs": [
+            "cd usbflash0:",
+            "show file systems",
+            "dir"
+        ]
+    },
+    {
+        "question": "67. What type of traffic is described as consisting of traffic that gets a lower priority if it is not mission-critical?",
+        "corrects": [
+            "data"
+        ],
+        "wrongs": [
+            "voice",
+            "video"
+        ]
+    }
+]

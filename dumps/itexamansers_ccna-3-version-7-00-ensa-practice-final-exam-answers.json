@@ -1,0 +1,619 @@
+[
+    {
+        "question": "1. Which QoS mechanism allows delay-sensitive data, such as voice, to be sent first before packets in other queues are sent?",
+        "corrects": [
+            "LLQ"
+        ],
+        "wrongs": [
+            "FIFO",
+            "FCFS",
+            "CBWFQ"
+        ]
+    },
+    {
+        "question": "3. What term describes adding a value to the packet header, as close to the source as possible, so that the packet matches a defined policy?",
+        "corrects": [
+            "traffic marking"
+        ],
+        "wrongs": [
+            "policing",
+            "weighted random early detection (WRED)",
+            "tail drop",
+            "traffic shaping"
+        ]
+    },
+    {
+        "question": "4. What is a characteristic of the distribution layer in the three layer hierarchical model?",
+        "corrects": [
+            "provides access to the rest of the network through switching, routing, and network access policies"
+        ],
+        "wrongs": [
+            "distributes access to end users",
+            "represents the network edge",
+            "acts as the backbone for the network, aggregating and distributing network traffic throughout the campus"
+        ]
+    },
+    {
+        "question": "5. Which two methods help to prevent the disruption of network services? (Choose two.)",
+        "corrects": [
+            "installing duplicate equipment to provide failover services",
+            "using redundant connections to provide alternate physical paths"
+        ],
+        "wrongs": [
+            "using VLANs to segment network traffic",
+            "changing the routing protocols at regular intervals",
+            "removing switches which cause loops"
+        ]
+    },
+    {
+        "question": "6. Which technology provides laptops the ability to function on a cellular network?",
+        "corrects": [
+            "mobile hotspot"
+        ],
+        "wrongs": [
+            "Bluetooth",
+            "infrared",
+            "802.11 Wi-Fi"
+        ]
+    },
+    {
+        "question": "7. Which two types of devices are specific to WAN environments and are not found on a LAN? (Choose two.)",
+        "corrects": [
+            "broadband modem",
+            "CSU/DSU"
+        ],
+        "wrongs": [
+            "access layer switch",
+            "core switch",
+            "distribution layer router"
+        ]
+    },
+    {
+        "question": "8. Which three traffic-related factors would influence selecting a particular WAN link type? (Choose three.)",
+        "corrects": [
+            "amount of traffic",
+            "security needs",
+            "type of traffic"
+        ],
+        "wrongs": [
+            "cost of the link",
+            "distance between sites",
+            "reliability"
+        ]
+    },
+    {
+        "question": "9. Which type of NAT maps a single inside local address to a single inside global address?",
+        "corrects": [
+            "static"
+        ],
+        "wrongs": [
+            "port address translation",
+            "overloading",
+            "dynamic"
+        ]
+    },
+    {
+        "question": "10. Refer to the exhibit. What has to be done in order to complete the static NAT configuration on R1?",
+        "corrects": [
+            "Interface S0/0/0 should be configured with the command ip nat outside"
+        ],
+        "wrongs": [
+            "Interface Fa0/0 should be configured with the command no ip nat inside",
+            "R1 should be configured with the command ip nat inside source static 209.165.200.200 192.168.11.11.",
+            "R1 should be configured with the command ip nat inside source static 209.165.200.1 192.168.11.11"
+        ]
+    },
+    {
+        "question": "11. Refer to the exhibit. R1 is configured for static NAT. What IP address will Internet hosts use to reach PC1?",
+        "corrects": [
+            "209.165.200.225"
+        ],
+        "wrongs": [
+            "192.168.0.1",
+            "192.168.0.10",
+            "209.165.201.1"
+        ]
+    },
+    {
+        "question": "12. A network administrator is troubleshooting the dynamic NAT that is configured on router R2. Which command can the administrator use to see the total number of active NAT translations and the number of addresses that are allocated from the NAT pool?",
+        "corrects": [
+            "R2# show ip nat statistics"
+        ],
+        "wrongs": [
+            "R2# show ip nat translations",
+            "R2# show running-config",
+            "R2# clear ip nat translation"
+        ]
+    },
+    {
+        "question": "13. What is correct in relation to NAT for IPv6?",
+        "corrects": [
+            "It is a temporary mechanism to assist in the migration from IPv4 to IPv6"
+        ],
+        "wrongs": [
+            "Dual stack is an example of implementation of NAT for IPv6.",
+            "NAT64 has been deprecated by IETF in favor of NAT-PT.",
+            "It is used to convert private IPv6 addresses to public IPv6 addresses"
+        ]
+    },
+    {
+        "question": "14. Which three statements are generally considered to be best practices in the placement of ACLs? (Choose three.)",
+        "corrects": [
+            "Filter unwanted traffic before it travels onto a low-bandwidth link.",
+            "Place standard ACLs close to the destination IP address of the traffic.",
+            "Place extended ACLs close to the source IP address of the traffic."
+        ],
+        "wrongs": [
+            "Place standard ACLs close to the source IP address of the traffic.",
+            "Place extended ACLs close to the destination IP address of the traffic.",
+            "For every inbound ACL placed on an interface, there should be a matching outbound ACL."
+        ]
+    },
+    {
+        "question": "15. Refer to the exhibit. The Gigabit interfaces on both routers have been configured with subinterface numbers that match the VLAN numbers connected to them. PCs on VLAN 10 should be able to print to the P1 printer on VLAN 12. PCs on VLAN 20 should print to the printers on VLAN 22. What interface and in what direction should you place a standard ACL that allows printing to P1 from data VLAN 10, but stops the PCs on VLAN 20 from using the P1 printer? (Choose two.)",
+        "corrects": [
+            "R1 Gi0/1.12",
+            "outbound"
+        ],
+        "wrongs": [
+            "inbound",
+            "R2 S0/0/1",
+            "R1 S0/0/0",
+            "R2 Gi0/1.20"
+        ]
+    },
+    {
+        "question": "16. If a router has two interfaces and is routing both IPv4 and IPv6 traffic, how many ACLs could be created and applied to it?",
+        "corrects": [
+            "8"
+        ],
+        "wrongs": [
+            "4",
+            "6",
+            "12",
+            "16"
+        ]
+    },
+    {
+        "question": "17. Which type of Hypervisor is implemented when a user with a laptop running the Mac OS installs a Windows virtual OS instance?",
+        "corrects": [
+            "type 2"
+        ],
+        "wrongs": [
+            "virtual machine",
+            "bare metal",
+            "type 1"
+        ]
+    },
+    {
+        "question": "18. Which two layers of the OSI model are associated with SDN network control plane functions that make forwarding decisions? (Choose two.)\u200b",
+        "corrects": [
+            "Layer 2",
+            "Layer 3"
+        ],
+        "wrongs": [
+            "Layer 1",
+            "Layer 4",
+            "Layer 5"
+        ]
+    },
+    {
+        "question": "19. What defines a two-tier spine-leaf topology?",
+        "corrects": [
+            "The Cisco APICs and all other devices in the network physically attach to leaf switches."
+        ],
+        "wrongs": [
+            "The APIC controller manipulates the data path directly.",
+            "The spine tier can be implemented with Cisco Nexus 9500 switches connected to each other and to the leaf switches.",
+            "Everything is two hops from everything else."
+        ]
+    },
+    {
+        "question": "20. Which SNMP message type informs the network management system (NMS) immediately of certain specified events?",
+        "corrects": [
+            "Trap"
+        ],
+        "wrongs": [
+            "SET request",
+            "GET request",
+            "GET response"
+        ]
+    },
+    {
+        "question": "21. Which number represents the most severe level of syslog logging?",
+        "corrects": [
+            "0"
+        ],
+        "wrongs": [
+            "1",
+            "6",
+            "7"
+        ]
+    },
+    {
+        "question": "22. Which command will backup the configuration that is stored in NVRAM to a TFTP server?",
+        "corrects": [
+            "copy startup-config tftp"
+        ],
+        "wrongs": [
+            "copy running-config tftp",
+            "copy tftp running-config",
+            "copy tftp startup-config"
+        ]
+    },
+    {
+        "question": "23. Which statement describes a feature of site-to-site VPNs?",
+        "corrects": [
+            "Internal hosts send normal, unencapsulated packets"
+        ],
+        "wrongs": [
+            "The VPN connection is not statically defined",
+            "VPN client software is installed on each host",
+            "Individual hosts can enable and disable the VPN connection"
+        ]
+    },
+    {
+        "question": "24. Which VPN solution allows the use of a web browser to establish a secure, remote-access VPN tunnel to the ASA?",
+        "corrects": [
+            "clientless SSL"
+        ],
+        "wrongs": [
+            "client-based SSL",
+            "site-to-site using an ACL",
+            "site-to-site using a preshared key"
+        ]
+    },
+    {
+        "question": "25. Which two types of VPNs are examples of enterprise-managed remote access VPNs? (Choose two.)",
+        "corrects": [
+            "clientless SSL VPN",
+            "client-based IPsec VPN"
+        ],
+        "wrongs": [
+            "IPsec VPN",
+            "IPsec Virtual Tunnel Interface VPN",
+            "GRE over IPsec VPN"
+        ]
+    },
+    {
+        "question": "26. When JSON data format is being used, what characters are used to hold objects?",
+        "corrects": [
+            "double braces { }"
+        ],
+        "wrongs": [
+            "double quotations \u201d \u201c",
+            "double brackets [ ]",
+            "double colons : :"
+        ]
+    },
+    {
+        "question": "27. Which two statements describe remote access VPNs? (Choose two.)",
+        "corrects": [
+            "Client software is usually required to be able to access the network",
+            "Remote access VPNs support the needs of telecommuters and mobile users"
+        ],
+        "wrongs": [
+            "Remote access VPNs are used to connect entire networks, such as a branch office to headquarters",
+            "End users are not aware that VPNs exists",
+            "A leased line is required to implement remote access VPNs"
+        ]
+    },
+    {
+        "question": "28. Refer to the exhibit. If the switch reboots and all routers have to re-establish OSPF adjacencies, which routers will become the new DR and BDR?",
+        "corrects": [
+            "Router R4 will become the DR and router R1 will become the BDR"
+        ],
+        "wrongs": [
+            "Router R2 will become the DR and router R3 will become the BDR",
+            "Router R1 will become the DR and router R2 will become the BDR",
+            "Router R4 will become the DR and router R3 will become the BDR"
+        ]
+    },
+    {
+        "question": "29. Refer to the exhibit. A network administrator has configured OSPFv2 on the two Cisco routers as shown. The routers are unable to form a neighbor adjacency. What should be done to fix the problem?",
+        "corrects": [
+            "Change the IP address on S0/0 of router R2 to 192.168.20.2."
+        ],
+        "wrongs": [
+            "Remove the FastEthernet0/0 passive interface configuration on router R1.",
+            "Add the command network 192.168.20.1 0.0.0.0 area 0 on router R1.",
+            "Add the command network 192.168.30.0 0.0.0.255 area 0 on router R1."
+        ]
+    },
+    {
+        "question": "30. What are the two purposes of an OSPF router ID? (Choose two.)",
+        "corrects": [
+            "to uniquely identify the router within the OSPF domain",
+            "to facilitate router participation in the election of the designated router"
+        ],
+        "wrongs": [
+            "to enable the SPF algorithm to determine the lowest cost path to remote networks",
+            "to facilitate the establishment of network convergence",
+            "to facilitate the transition of the OSPF neighbor state to Full"
+        ]
+    },
+    {
+        "question": "31. Which command will a network engineer issue to verify the configured hello and dead timer intervals on a point-to-point WAN link between two routers that are running OSPFv2?",
+        "corrects": [
+            "show ip ospf interface serial 0/0/0"
+        ],
+        "wrongs": [
+            "show ipv6 ospf interface serial 0/0/0",
+            "show ip ospf neighbor",
+            "show ip ospf interface fastethernet 0/1"
+        ]
+    },
+    {
+        "question": "32. Refer to the exhibit. What is the OSPF cost to reach the router A LAN 172.16.1.0/24 from B?",
+        "corrects": [
+            "65"
+        ],
+        "wrongs": [
+            "782",
+            "74",
+            "128"
+        ]
+    },
+    {
+        "question": "33. Refer to the exhibit. Which data format is used to represent the data for network automation applications?",
+        "corrects": [
+            "YAML"
+        ],
+        "wrongs": [
+            "JSON",
+            "XML",
+            "HTML"
+        ]
+    },
+    {
+        "question": "34. A user is reading a book from the website https://www.books-info.com/author1a/book2.html#page100 . Which part of the web link is called a fragment?",
+        "corrects": [
+            "#page100"
+        ],
+        "wrongs": [
+            "/author1a",
+            "https://",
+            "/book2.html"
+        ]
+    },
+    {
+        "question": "35. Refer to the exhibit. Why are routers R1 and R2 not able to establish an OSPF adjacency?",
+        "corrects": [
+            "The serial interfaces are not in the same area"
+        ],
+        "wrongs": [
+            "The process numbers are not the same in both routers",
+            "A backbone router cannot establish an adjacency with an ABR router.",
+            "The router ID values are not the same in both routers."
+        ]
+    },
+    {
+        "question": "36. A network technician has used the access-list 1 permit 172.16.0.0 0.0.0.255 command to configure NAT on an edge router to translate only four networks, 172.16.0.0 /24, 172.16.1.0 /24, 172.16.2.0 /24, and 172.16.3.0 /24. After receiving complaints about limited access to the Internet, issuing the show ip nat translations command reveals that some networks are missing from the output. Which change will resolve the problem?",
+        "corrects": [
+            "The access list should be replaced with access-list 1 permit 172.16.0.0 0.0.3.255"
+        ],
+        "wrongs": [
+            "The access list should be replaced with access-list 1 permit 172.16.0.0 0.0.1.255 .",
+            "The access list should be replaced with access-list 1 permit 172.16.0.0 0.0.0.255",
+            "The access list should be replaced with access-list 1 permit 172.16.0.0 255.255.255.0."
+        ]
+    },
+    {
+        "question": "37. Which type of tool would an administrator use to capture packets that are going to and from a particular device?",
+        "corrects": [
+            "protocol analyzer"
+        ],
+        "wrongs": [
+            "baselining tool",
+            "knowledge base",
+            "NMS tool"
+        ]
+    },
+    {
+        "question": "38. A user reports that the workstation cannot connect to a networked printer in the office in order to print a report created with word processing software. Which troubleshooting action by the helpdesk technician would follow the divide-and-conquer approach?",
+        "corrects": [
+            "Ask the user to issue the ipconfig command"
+        ],
+        "wrongs": [
+            "Ask the user to launch the web browser",
+            "Ask the user to unplug and reattach the network cable",
+            "Ask the user to save the working document"
+        ]
+    },
+    {
+        "question": "39. Match the OSPF state with the order in which it occurs. (Not all options are used.)",
+        "corrects": [
+            "init state: second state",
+            "active state: -",
+            "full state: seventh state",
+            "exchange state: fifth state",
+            "down state: first state",
+            "exstart state: fourth state",
+            "passive state: -",
+            "Two-way state: third state",
+            "loading state: sixth state" 
+        ],
+        "wrongs": []
+    },
+    {
+        "question": "40. When an OSPF network is converged and no network topology change has been detected by a router, how often will LSU packets be sent to neighboring routers?",
+        "corrects": [
+            "every 30 minutes"
+        ],
+        "wrongs": [
+            "every 5 minutes",
+            "every 10 minutes",
+            "every 60 minutes"
+        ]
+    },
+    {
+        "question": "41. Which type of OSPFv2 packet contains an abbreviated list of the LSDB of a sending router and is used by receiving routers to check against the local LSDB?",
+        "corrects": [
+            "database description"
+        ],
+        "wrongs": [
+            "link-state acknowledgment",
+            "link-state update",
+            "link-state request"
+        ]
+    },
+    {
+        "question": "42. Which step in the link-state routing process is described by a router building a link-state database based on received LSAs?",
+        "corrects": [
+            "building the topology table"
+        ],
+        "wrongs": [
+            "executing the SPF algorithm",
+            "selecting the router ID",
+            "declaring a neighbor to be inaccessible"
+        ]
+    },
+    {
+        "question": "43. Refer to the exhibit. A network administrator has configured ACL 9 as shown. Users on the 172.31.1.0 /24 network cannot forward traffic through router CiscoVille. What is the most likely cause of the traffic failure?",
+        "corrects": [
+            "The sequence of the ACEs is incorrect."
+        ],
+        "wrongs": [
+            "The established keyword is not specified.",
+            "The port number for the traffic has not been identified with the eq keyword.",
+            "The permit statement specifies an incorrect wildcard mask."
+        ]
+    },
+    {
+        "question": "44. A technician is tasked with using ACLs to secure a router. When would the technician use the access-class 20 in configuration option or command?",
+        "corrects": [
+            "to secure administrative access to the router"
+        ],
+        "wrongs": [
+            "to secure management traffic into the router",
+            "to display all restricted traffic",
+            "to remove all ACLs from the router"
+        ]
+    },
+    {
+        "question": "45. Refer to the exhibit. A network administrator is configuring a standard IPv4 ACL. What is the effect after the command no access-list 10 is entered?",
+        "corrects": [
+            "ACL 10 is removed from the running configuration."
+        ],
+        "wrongs": [
+            "ACL 10 is removed from both the running configuration and the interface Fa0/1.",
+            "ACL 10 is disabled on Fa0/1.",
+            "ACL 10 will be disabled and removed after R1 restarts."
+        ]
+    },
+    {
+        "question": "46. An administrator has configured an access list on R1 to allow SSH administrative access from host 172.16.1.100. Which command correctly applies the ACL?",
+        "corrects": [
+            "R1(config-line)# access-class 1 in"
+        ],
+        "wrongs": [
+            "R1(config-if)# ip access-group 1 out",
+            "R1(config-if)# ip access-group 1 in",
+            "R1(config-line)# access-class 1 out"
+        ]
+    },
+    {
+        "question": "47. Refer to the exhibit. The network administrator that has the IP address of 10.0.70.23/25 needs to have access to the corporate FTP server (10.0.54.5/28). The FTP server is also a web server that is accessible to all internal employees on networks within the 10.x.x.x address. No other traffic should be allowed to this server. Which extended ACL would be used to filter this traffic, and how would this ACL be applied? (Choose two.)",
+        "corrects": [
+            "access-list 105 permit tcp host 10.0.70.23 host 10.0.54.5 eq 20\naccess-list 105 permit tcp host 10.0.70.23 host 10.0.54.5 eq 21\naccess-list 105 permit tcp 10.0.0.0 0.255.255.255 host 10.0.54.5 eq www\naccess-list 105 deny ip any host 10.0.54.5\naccess-list 105 permit ip any any",
+            "R1(config)# interface gi0/0\nR1(config-if)# ip access-group 105 out"
+        ],
+        "wrongs": []
+    },
+    {
+        "question": "48. What is a feature of an IPS?",
+        "corrects": [
+            "It can stop malicious packets."
+        ],
+        "wrongs": [
+            "It has no impact on latency.",
+            "It is deployed in offline mode.",
+            "It is primarily focused on identifying possible incidents."
+        ]
+    },
+    {
+        "question": "49. Which type of security threat can be described as software that attaches itself to another program to execute a specific unwanted function?",
+        "corrects": [
+            "virus"
+        ],
+        "wrongs": [
+            "denial of service Trojan horse",
+            "proxy Trojan horse",
+            "worm"
+        ]
+    },
+    {
+        "question": "50. What is the significant characteristic of worm malware?",
+        "corrects": [
+            "A worm can execute independently of the host system."
+        ],
+        "wrongs": [
+            "Once installed on a host system, a worm does not replicate itself.",
+            "A worm must be triggered by an event on the host system.",
+            "Worm malware disguises itself as legitimate software."
+        ]
+    },
+    {
+        "question": "51. What is the best description of Trojan horse malware?",
+        "corrects": [
+            "It appears as useful software but hides malicious code."
+        ],
+        "wrongs": [
+            "It is software that causes annoying but not fatal computer problems.",
+            "It is the most easily detected form of malware.",
+            "It is malware that can only be distributed over the Internet."
+        ]
+    },
+    {
+        "question": "52. What is the function of ASICs in a multilayer switch?",
+        "corrects": [
+            "They streamline forwarding of IP packets in a multilayer switch by bypassing the CPU."
+        ],
+        "wrongs": [
+            "They aggregate multiple physical switch ports into a single logical port.",
+            "They provide power to devices such as IP phones and wireless access points through Ethernet ports.",
+            "They prevent Layer 2 loops by disabling redundant links between switches."
+        ]
+    },
+    {
+        "question": "53. What is the port density of a switch?",
+        "corrects": [
+            "the number of available ports on a switch"
+        ],
+        "wrongs": [
+            "the combined bandwidth of all ports on a switch",
+            "the throughput of a port",
+            "the bandwidth of a port"
+        ]
+    },
+    {
+        "question": "54. What is a difference between the functions of Cloud computing and virtualization?",
+        "corrects": [
+            "Cloud computing separates the application from the hardware whereas virtualization separates the OS from the underlying hardware"
+        ],
+        "wrongs": [
+            "Cloud computing provides services on web-based access whereas virtualization provides services on data access through virtualized Internet connections",
+            "Cloud computing requires hypervisor technology whereas virtualization is a fault tolerance technology",
+            "Cloud computing utilizes data center technology whereas virtualization is not used in data centers"
+        ]
+    },
+    {
+        "question": "55. Why would a network administrator use the config-register 0x2102 command on a Cisco network device?",
+        "corrects": [
+            "to ensure that the device loads the startup configuration file during startup"
+        ],
+        "wrongs": [
+            "to monitor and manage network performance, find and solve network problems, and plan for network growth",
+            "to back up the running configuration onto a USB drive",
+            "to learn device names, IOS versions, and the number and type of interfaces of connected devices"
+        ]
+    },
+    {
+        "question": "56. Refer to the exhibit. The network administrator that has the IP address of 10.0.70.23/25 needs to have access to the corporate FTP server (10.0.54.5/28). The FTP server is also a web server that is accessible to all internal employees on networks within the 10.x.x.x address. No other traffic should be allowed to this server. Which extended ACL would be used to filter this traffic, and how would this ACL be applied? (Choose two.)",
+        "corrects": [
+            "access-list 105 permit tcp host 10.0.70.23 host 10.0.54.5 eq 20\naccess-list 105 permit tcp host 10.0.70.23 host 10.0.54.5 eq 21\naccess-list 105 permit tcp 10.0.0.0 0.255.255.255 host 10.0.54.5 eq www\naccess-list 105 deny ip any host 10.0.54.5\naccess-list 105 permit ip any any",
+            "R1(config)# interface gi0/0\nR1(config-if)# ip access-group 105 out"
+        ],
+        "wrongs": []
+    }
+]
